@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+""" Module for square class """
 
 class Square():
+    """ Square class """
 
     width = 0
     height = 0
@@ -23,8 +25,8 @@ class Square():
 
 
 if __name__ == "__main__":
-
-    s = Square(width=12, height=12)
+    """ Create a square object """
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
