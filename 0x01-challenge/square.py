@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 class Square():
-    
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
@@ -19,7 +18,9 @@ class Square():
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ String repr of the module """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
